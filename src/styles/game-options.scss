@@ -1,0 +1,8 @@
+.game-options {
+  display: flex;
+  flex-direction: column;
+
+  &__option {
+    padding-bottom: 10px;
+  }
+}

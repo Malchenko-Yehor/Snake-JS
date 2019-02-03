@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "lib": [
+            "es2015.iterable",
+            "dom",
+            "es2016.array.include",
+            "es2018"
+        ],
+        "target": "es5",
+        "allowJs": true
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake Game</title>
+</head>
+
+<body>
+    <div class="game-over-overlay">
+        <div class="game-over-overlay__wrapper">
+            <div class="game-over-overlay__text">Game Over</div>
+            <button class="game-over-overlay__button">Restart</button>
+        </div>
+    </div>
+
+    <div class="game-score">
+        Score: <span class="game-score__number" id="score">0</span>
+    </div>
+
+    <div class="game-options">
+        <div class="game-options__option">
+            Select Level
+            <select id="levelSelect">
+                <option value="1" selected>Level 1</option>
+                <option value="2">Level 2</option>
+                <option value="3">Level 3</option>
+                <option value="4">Level 4</option>
+                <option value="5">Level 5</option>
+            </select>
+        </div>
+        <div class="game-options__option">
+            Select speed
+            <select id="speedSelect">
+                <option value="150">Turtle</option>
+                <option value="125">Slow</option>
+                <option value="100" selected>Normal</option>
+                <option value="75">Fast</option>
+                <option value="50">Flash</option>
+            </select>
+        </div>
+        <div class="game-options__option">
+            Powerup Strength
+            <select id="powerupStrength">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5" selected>5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+        <div class="game-options__option">
+            Powerup Duration
+            <select id="powerupDuration">
+                <option value="3">3s</option>
+                <option value="4">4s</option>
+                <option value="5" selected>5s</option>
+                <option value="6">6s</option>
+                <option value="7">7s</option>
+            </select>
+        </div>
+
+    </div>
+    <canvas id="gameCanvas" width="500" height="500"></canvas>
+
+    <button id="startButton">Start Game</button>
+    <button id="displayScore">Display Score</button>
+</body>
+
+</html>
